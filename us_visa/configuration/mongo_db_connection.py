@@ -1,4 +1,4 @@
-import os
+import os,sys
 from us_visa.constants import DATABASE_NAME,MONGODB_URL_KEY
 from exception import USvisaException
 from logger import logging
@@ -24,3 +24,4 @@ class MongoDBClient:
                 logging.info("MongoDb Connection Succesful")
         except Exception as e:
             raise USvisaException(e,sys) from e
+        
