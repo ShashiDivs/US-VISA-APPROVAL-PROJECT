@@ -1,7 +1,7 @@
 import os,sys
 from us_visa.constants import DATABASE_NAME,MONGODB_URL_KEY
-from exception import USvisaException
-from logger import logging
+from us_visa.exception import USvisaException
+from us_visa.logger import logging
 import pymongo
 import certifi
 
